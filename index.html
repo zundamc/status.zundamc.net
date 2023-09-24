@@ -7,9 +7,9 @@
 	<title>ずんだMC ステータス - ZundaMC Networkのステータス</title>
 	<link rel="stylesheet" href="/css/style.css">
 
-	<meta name="author" content="ZundaMC Network">
+	<meta name="author" content="ZundaMC Network ステータス">
 	<meta name="keywords" content="keywords">
-	<meta name="description" content="マインクラフトサーバー「ずんだMC」の公式サイトです。">
+	<meta name="description" content="マインクラフトサーバー「ずんだMC」のステータスを確認できるサイトです。">
 	<meta name="theme-color" content="#fffff">
 	<meta name="image" content="/img/zunda.webp">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +30,8 @@
 	<header>
 		<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="/"><img src="/img/zunda.webp" alt="ずんだMC ロゴ" height="32"> ZundaMC Status</a>
+				<a class="navbar-brand" href="/"><img src="/img/zunda.webp" alt="ずんだMC ロゴ" height="32"> ZundaMC
+					Status</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks"
 					aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -38,10 +39,12 @@
 				<div class="collapse navbar-collapse" id="navbarLinks">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" href="https://zundamc.net"><i class="bi bi-house-door-fill"></i> Status</a>
+							<a class="nav-link active" href="https://zundamc.net"><i class="bi bi-house-door-fill"></i>
+								Status</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://zundamc.net"><i class="bi bi-box-arrow-up-right"></i> Home</a>
+							<a class="nav-link" href="https://zundamc.net"><i class="bi bi-box-arrow-up-right"></i>
+								Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="https://github.com/ZundaMC"><i class="bi bi-github"></i>
@@ -65,18 +68,16 @@
 		</nav>
 	</header>
 	<main>
-		<section class="header wallpapers">
-			<div class="blur">
-				<div class="container vh-100 text-center d-flex align-items-center justify-content-center">
-					<div class="mw-100">
-						<img src="/img/zunda.webp" width="400" height="400" alt="zunda">
-						<h1 class="fw-bold">ずんだMC Networkのステータス</h1>
-						<h2>ずんだMCのウェブサイト・マイクラサーバーのステータスを確認できます。</h2><br>
-						<button class="btn btn-lg btn-primary btn-scroll" style="font-size: 30px;">
-							<i class="bi bi-arrow-down"></i>
-							ステータス
-						</button>
-					</div>
+		<section class="header">
+			<div class="container vh-100 text-center d-flex align-items-center justify-content-center">
+				<div class="mw-100">
+					<img src="/img/zunda.webp" width="400" height="400" alt="zunda">
+					<h1 class="fw-bold">ずんだMC Networkのステータス</h1>
+					<h2>ずんだMCのウェブサイト・マイクラサーバーのステータスを確認できます。</h2><br>
+					<button class="btn btn-lg btn-primary btn-scroll" style="font-size: 30px;">
+						<i class="bi bi-arrow-down"></i>
+						ステータス
+					</button>
 				</div>
 			</div>
 		</section>
@@ -84,7 +85,7 @@
 			<div class="d-flex" style="justify-content: center;">
 				<div class="card" style="width: 20rem; margin-right: 5rem;">
 					<img src="/img/zunda.webp" class="card-img-top"></img>
-										<div class="card-body">
+					<div class="card-body">
 						<h5 class="card-title">ウェブサイト</h5>
 						<p class="card-text"><a
 								href="https://zundamc.net">https://zundamc.net</a>のステータスです。<br>このサイトはGitHub
@@ -94,11 +95,14 @@
 				</div>
 
 				<div class="card" style="width: 20rem; margin-right: 5rem">
-					<img src="/img/minecraft_logo.png" class="card-img-top"  alt="...">
+					<img src="/img/minecraft_logo.png" class="card-img-top" alt="...">
 					<div class="card-body">
 						<h5 class="card-title">マインクラフトサーバー</h5>
 						<p class="card-text">マインクラフトサーバーのステータスです。<br>また、DoS等を受けてネットワークが不安定になる場合があります。あらかじめご了承ください。</p>
 						<h2 class="status-mc">⚫確認中</h2>
+						<div class="online-status">
+							<h4 class="online-members">オンラインの人数: </h4>
+						</div>
 					</div>
 				</div>
 			</div>

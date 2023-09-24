@@ -10,7 +10,6 @@ function getWebsiteState() {
 
     xhr.open("GET", "https://zundamc.net", true);
     xhr.onreadystatechange = () => {
-        // ローカルファイルでは、 Mozilla Firefox で成功するとステータスは0になります
         if (xhr.readyState === XMLHttpRequest.DONE) {
             const status = xhr.status;
             if (status === 0 || (status >= 200 && status < 400)) {
@@ -29,10 +28,13 @@ function getMCState() {
     xhr.onreadystatechange = () => {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             const status = xhr.status;
+            const parsedJson = JSON.parse(xhr.responseText);
             if (status === 0 || (status >= 200 && status < 400)) {
-                if (JSON.parse(xhr.responseText).online) {
+                if (parsedJson.online) {
                     document.getElementsByClassName("status-mc")[0].textContent = "🟢オンライン"
+                    document.getElementsByClassName("online-members")[0].textContent = "オンラインの人数:  " + parsedJson.players.online + " / " + parsedJson.players.max;
                 } else {
+                    document.getElementsByClassName("online-status")[0].style.display = "none";
                     document.getElementsByClassName("status-mc")[0].textContent = "🔴オフライン"
                 }
             }
