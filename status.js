@@ -1,7 +1,3 @@
-document.getElementsByClassName("btn-scroll")[0].addEventListener("click", () => {
-    window.scroll(0, 700)
-})
-
 getWebsiteState();
 getMCState();
 
